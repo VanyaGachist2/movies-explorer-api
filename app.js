@@ -1,6 +1,7 @@
 require('dotenv').config();
 const { PORT = 3000 } = process.env;
 const express = require('express');
+const cors = require('cors');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
 const userRouter = require('./routes/user');
@@ -22,6 +23,15 @@ const {
 } = require('./controllers/users');
 
 const app = express();
+
+const corsOption = {
+  origin: ['http://localhost:3000', 'http://localhost:3001', 
+  'http://vantwo.nomoredomainswork.ru', 'https://vantwo.nomoredomainswork.ru',
+  'http://api.vantwo.nomoredomainswork.ru', 'https://api.vantwo.nomoredomainswork.ru'],
+  credentials: true,
+}
+
+app.use(cors(corsOption));
 
 app.use(express.json());
 
