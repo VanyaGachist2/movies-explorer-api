@@ -12,4 +12,6 @@
 5) *Eslint*
 ## Ip4 проекта
 -----
--- Ip: 
+Ip: 158.160.138.62
+Ссылка на бэк: http://api.vantwo.nomoredomainswork.ru 
+
