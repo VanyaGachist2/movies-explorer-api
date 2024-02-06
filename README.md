@@ -14,4 +14,3 @@
 -----
 1) Ip: 158.160.138.62
 2) Ссылка на бэк: http://api.vantwo.nomoredomainswork.ru 
-
