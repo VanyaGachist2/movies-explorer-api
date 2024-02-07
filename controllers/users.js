@@ -5,8 +5,10 @@ const NotFoundError = require('../errors/NotFoundError'); // 404
 const BadRequestError = require('../errors/BadRequestError'); // 400
 const ConflictError = require('../errors/ConflictError'); // 409
 const AuthError = require('../errors/AuthError');
-
-const { NODE_ENV, JWT_SECRET } = process.env;
+const {
+  NODE_ENV,
+  JWT_SECRET,
+} = require('../utils/config');
 
 module.exports.getOneUser = async (req, res, next) => {
   try {
@@ -48,7 +50,11 @@ module.exports.updateUserInfo = async (req) => {
       if (!user) {
         throw new NotFoundError('пользователя нет');
       }
+      return res.status(200).json(user);
   } catch (err) {
+    if (err.code === 11000) {
+      return next(new ConflictError('Изменения отменены'));
+    }
     if (err.name === 'ValidationError') {
       return next(new BadRequestError('неправильные данные'));
     }

@@ -32,7 +32,7 @@ module.exports.validationMovie = celebrate({
     year: Joi.string().required(),
     description: Joi.string().required(),
     image: Joi.string().required().pattern(validURL),
-    traier: Joi.string().required().pattern(validURL),
+    trailerLink: Joi.string().required().pattern(validURL),
     thumbnail: Joi.string().required().pattern(validURL),
     movieId: Joi.number().required(),
     nameRU: Joi.string().required(),

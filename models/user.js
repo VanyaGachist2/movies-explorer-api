@@ -18,7 +18,6 @@ const User = mongoose.Schema({
   },
   name: {
     type: String,
-    default: 'Даня Гачист',
     minlength: 2,
     maxlength: 30,
     required: true,

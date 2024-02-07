@@ -4,9 +4,9 @@ const BadRequestError = require('../errors/BadRequestError'); // 400
 const UserError = require('../errors/UserError'); // 403
 
 module.exports.getMovies = async (req, res, next) => {
-  const userId = req.user._id;
+  const owner = req.user._id;
   try {
-    const movie = await Movie.find({ userId });
+    const movie = await Movie.find({ owner });
     return res.status(200).json(movie);
   } catch (err) {
     return next(err);
@@ -21,7 +21,7 @@ module.exports.createMovie = async (req, res, next) => { // +
     year,
     description,
     image,
-    trailer,
+    trailerLink,
     nameRU,
     nameEN,
     thumbnail,
@@ -35,7 +35,7 @@ module.exports.createMovie = async (req, res, next) => { // +
       year,
       description,
       image,
-      trailer,
+      trailerLink,
       nameRU,
       nameEN,
       thumbnail,
