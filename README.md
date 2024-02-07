@@ -13,4 +13,4 @@
 ## Ip4 проекта
 -----
 1) Ip: 158.160.138.62
-2) Ссылка на бэк: http://api.vantwo.nomoredomainswork.ru 
+2) Ссылка на бэк: https://api.vantwo.nomoredomainswork.ru
