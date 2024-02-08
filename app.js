@@ -8,7 +8,7 @@ const { dataMovies, PORT } = require('./utils/config');
 const router = require('./routes/index');
 const errorHandler = require('./middlewares/errorHandler');
 const { 
-  requestLogger, 
+  requestLogger,
   errorLogger,
 } = require('./middlewares/logger');
 const rateLimiter = require('./middlewares/rateLimiter');

@@ -20,7 +20,6 @@
       "semi": "off",
       "indent": "off",
       "new-cap": "off",
-      "arrow-body-style": "off",
-      "consistent-return": "off"
+      "arrow-body-style": "off"
     }
 }

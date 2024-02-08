@@ -32,7 +32,7 @@ module.exports.getOneUser = async (req, res, next) => {
   }
 }
 
-module.exports.updateUserInfo = async (req) => {
+module.exports.updateUserInfo = async (req, res, next) => {
   const {
     email,
     name,
