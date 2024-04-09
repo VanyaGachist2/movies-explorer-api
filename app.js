@@ -19,6 +19,10 @@ const corsOption = {
   origin: ['http://localhost:3000', 'http://localhost:3001', 
   'http://vanyafront.nomoredomainswork.ru', 'https://vanyafront.nomoredomainswork.ru',
   'http://api.vanyafront.nomoredomainswork.ru', 'https://api.vanyafront.nomoredomainswork.ru'],
+  methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],  
+  preflightContinue: false,  
+  optionsSuccessStatus: 204,  
+  allowedHeaders: ['Content-Type', 'origin', 'Authorization'], 
   credentials: true,
 }
 
