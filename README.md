@@ -12,5 +12,5 @@
 5) *Eslint*
 ## Ip4 проекта
 -----
-1) Ip: 158.160.138.62
-2) Ссылка на бэк: https://api.vantwo.nomoredomainswork.ru
+1) Ip: 51.250.108.41
+2) Ссылка на бэк: https://api.moviesfront.nomoredomainswork.ru/
