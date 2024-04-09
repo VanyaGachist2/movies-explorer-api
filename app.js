@@ -17,8 +17,8 @@ const app = express();
 
 const corsOption = {
   origin: ['http://localhost:3000', 'http://localhost:3001', 
-  'http://moviesfront.nomoredomainswork.ru/', 'https://moviesfront.nomoredomainswork.ru',
-  'http://api.moviesfront.nomoredomainswork.ru', 'https://api.moviesfront.nomoredomainswork.ru'],
+  'http://vanyafront.nomoredomainswork.ru', 'https://vanyafront.nomoredomainswork.ru',
+  'http://api.vanyafront.nomoredomainswork.ru', 'https://api.vanyafront.nomoredomainswork.ru'],
   credentials: true,
 }
 
