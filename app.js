@@ -17,8 +17,8 @@ const app = express();
 
 const corsOption = {
   origin: ['http://localhost:3000', 'http://localhost:3001', 
-  'http://vantwo.nomoredomainswork.ru', 'https://vantwo.nomoredomainswork.ru',
-  'http://api.vantwo.nomoredomainswork.ru', 'https://api.vantwo.nomoredomainswork.ru'],
+  'http://moviesfront.nomoredomainswork.ru/', 'https://moviesfront.nomoredomainswork.ru',
+  'http://api.moviesfront.nomoredomainswork.ru', 'https://api.moviesfront.nomoredomainswork.ru'],
   credentials: true,
 }
 
